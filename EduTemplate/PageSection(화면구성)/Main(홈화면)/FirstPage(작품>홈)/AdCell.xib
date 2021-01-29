@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdCell" id="gTV-IL-0wX" customClass="AdCell" customModule="EduTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="223" height="172"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="223" height="172"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="홈화면광고배너" translatesAutoresizingMaskIntoConstraints="NO" id="BvG-wN-THA">
+                        <rect key="frame" x="0.0" y="0.0" width="223" height="152"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 작품" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHN-U3-tvf">
+                        <rect key="frame" x="0.0" y="154" width="223" height="17.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="cHN-U3-tvf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="0wG-pt-dsW"/>
+                <constraint firstItem="cHN-U3-tvf" firstAttribute="width" secondItem="BvG-wN-THA" secondAttribute="width" id="NS3-mD-AH5"/>
+                <constraint firstItem="BvG-wN-THA" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="OA4-ho-ZZe"/>
+                <constraint firstItem="BvG-wN-THA" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="TL8-ay-VFI"/>
+                <constraint firstItem="BvG-wN-THA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XL2-KF-BIp"/>
+                <constraint firstItem="BvG-wN-THA" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.884884" id="YFQ-yd-FYI"/>
+                <constraint firstItem="cHN-U3-tvf" firstAttribute="top" secondItem="BvG-wN-THA" secondAttribute="bottom" constant="2" id="iGb-gy-45g"/>
+                <constraint firstItem="cHN-U3-tvf" firstAttribute="height" secondItem="BvG-wN-THA" secondAttribute="height" multiplier="0.114815" id="pL9-Xz-1mc"/>
+            </constraints>
+            <size key="customSize" width="223" height="172"/>
+            <point key="canvasLocation" x="141.30434782608697" y="150.66964285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="홈화면광고배너" width="1218" height="885"/>
+    </resources>
+</document>

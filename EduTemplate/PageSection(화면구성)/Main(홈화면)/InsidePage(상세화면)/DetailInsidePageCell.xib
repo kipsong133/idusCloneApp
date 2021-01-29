@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="538" id="KGk-i7-Jjw" customClass="DetailInsidePageCell" customModule="EduTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="538"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="538"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="작품사진예시" translatesAutoresizingMaskIntoConstraints="NO" id="9JD-GJ-S1t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="321"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="희스무드 (heesmood) &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH5-ge-gqU">
+                        <rect key="frame" x="59" y="341" width="133.5" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="원형작가프로필Default" translatesAutoresizingMaskIntoConstraints="NO" id="1uB-or-RSU">
+                        <rect key="frame" x="16" y="329" width="35" height="47"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="카멜리아(실크심지)고급양면에코백/리뷰이벤트" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPs-T3-ZVM">
+                        <rect key="frame" x="16" y="384" width="214" height="58"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="작품세부페이지적립금" translatesAutoresizingMaskIntoConstraints="NO" id="f5Y-AC-aUm">
+                        <rect key="frame" x="16" y="450" width="163" height="54"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="즐겨찾기공유하기버튼이미지" translatesAutoresizingMaskIntoConstraints="NO" id="qNj-Qw-YVF">
+                        <rect key="frame" x="0.0" y="505" width="320" height="33"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="qNj-Qw-YVF" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.0613383" id="0Nk-pB-RhD"/>
+                    <constraint firstItem="f5Y-AC-aUm" firstAttribute="height" secondItem="JPs-T3-ZVM" secondAttribute="height" multiplier="0.931034" id="4Et-x6-CHN"/>
+                    <constraint firstItem="JPs-T3-ZVM" firstAttribute="height" secondItem="1uB-or-RSU" secondAttribute="height" multiplier="1.22857" id="5i2-1E-ZGR"/>
+                    <constraint firstItem="yH5-ge-gqU" firstAttribute="leading" secondItem="1uB-or-RSU" secondAttribute="trailing" constant="8" id="7KE-Do-kiY"/>
+                    <constraint firstItem="1uB-or-RSU" firstAttribute="height" secondItem="9JD-GJ-S1t" secondAttribute="height" multiplier="0.147059" id="7ln-CE-g2W"/>
+                    <constraint firstItem="9JD-GJ-S1t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CEF-dM-trc"/>
+                    <constraint firstItem="yH5-ge-gqU" firstAttribute="centerY" secondItem="1uB-or-RSU" secondAttribute="centerY" id="GA8-Tp-XZF"/>
+                    <constraint firstItem="qNj-Qw-YVF" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="JiZ-J1-7da"/>
+                    <constraint firstItem="1uB-or-RSU" firstAttribute="top" secondItem="9JD-GJ-S1t" secondAttribute="bottom" constant="8" id="Keh-7l-JXD"/>
+                    <constraint firstItem="1uB-or-RSU" firstAttribute="width" secondItem="9JD-GJ-S1t" secondAttribute="width" multiplier="0.109375" id="LeD-X7-twL"/>
+                    <constraint firstItem="JPs-T3-ZVM" firstAttribute="top" secondItem="1uB-or-RSU" secondAttribute="bottom" constant="8" id="Nkx-ky-Yd2"/>
+                    <constraint firstItem="9JD-GJ-S1t" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="R7r-Ss-5n6"/>
+                    <constraint firstItem="f5Y-AC-aUm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="XzS-7J-1zl"/>
+                    <constraint firstItem="JPs-T3-ZVM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="frx-4Q-OrM"/>
+                    <constraint firstItem="9JD-GJ-S1t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="g8Q-ue-sUc"/>
+                    <constraint firstItem="JPs-T3-ZVM" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.66875" id="gSv-h5-7U2"/>
+                    <constraint firstItem="f5Y-AC-aUm" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.509375" id="h1D-w1-IxJ"/>
+                    <constraint firstAttribute="bottom" secondItem="qNj-Qw-YVF" secondAttribute="bottom" id="nXW-yI-W9c"/>
+                    <constraint firstItem="f5Y-AC-aUm" firstAttribute="top" secondItem="JPs-T3-ZVM" secondAttribute="bottom" constant="8" id="ngb-sJ-6f2"/>
+                    <constraint firstItem="yH5-ge-gqU" firstAttribute="height" secondItem="1uB-or-RSU" secondAttribute="height" multiplier="0.485714" id="qCG-9l-0tu"/>
+                    <constraint firstItem="9JD-GJ-S1t" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.596273" id="svm-sW-fOu"/>
+                    <constraint firstAttribute="trailing" secondItem="9JD-GJ-S1t" secondAttribute="trailing" id="uWf-7q-jeq"/>
+                    <constraint firstAttribute="trailing" secondItem="qNj-Qw-YVF" secondAttribute="trailing" id="uza-om-ApB"/>
+                    <constraint firstItem="1uB-or-RSU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="y3L-Hs-GA3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="produectname" destination="JPs-T3-ZVM" id="3ZG-rk-0pG"/>
+                <outlet property="produnctImageView" destination="9JD-GJ-S1t" id="P7P-hR-YoN"/>
+                <outlet property="sellerProfileImageView" destination="1uB-or-RSU" id="GmI-Ca-VCB"/>
+                <outlet property="sellername" destination="yH5-ge-gqU" id="yFg-yi-UsE"/>
+            </connections>
+            <point key="canvasLocation" x="11.594202898550726" y="89.0625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="원형작가프로필Default" width="282" height="282"/>
+        <image name="작품사진예시" width="1218" height="1130"/>
+        <image name="작품세부페이지적립금" width="704" height="235"/>
+        <image name="즐겨찾기공유하기버튼이미지" width="1230" height="157"/>
+    </resources>
+</document>

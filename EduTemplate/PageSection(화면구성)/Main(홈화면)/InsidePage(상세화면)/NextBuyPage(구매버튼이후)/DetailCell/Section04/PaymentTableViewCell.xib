@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="PaymentTableViewCell" customModule="EduTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디어스 할인 혜택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nk-v3-kvw">
+                        <rect key="frame" x="16" y="10" width="125" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디어스 적립금" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bos-sP-y9y">
+                        <rect key="frame" x="16" y="38" width="87" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" 0P" borderStyle="line" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2my-eL-S65">
+                        <rect key="frame" x="16" y="61" width="232" height="41"/>
+                        <color key="textColor" red="0.94211840629999999" green="0.55687004330000001" blue="0.32542389630000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bw1-gI-a5B">
+                        <rect key="frame" x="256" y="61" width="48" height="41"/>
+                        <state key="normal" title="사용">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보유중인 적립금 280P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dg7-N0-Ho8">
+                        <rect key="frame" x="16" y="104" width="119" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6Nk-v3-kvw" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.390625" id="9YQ-vU-R5m"/>
+                    <constraint firstItem="bos-sP-y9y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="BOZ-xD-WIa"/>
+                    <constraint firstItem="dg7-N0-Ho8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="EzN-FT-TG1"/>
+                    <constraint firstItem="bos-sP-y9y" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.108696" id="LC9-y1-qjz"/>
+                    <constraint firstItem="bw1-gI-a5B" firstAttribute="height" secondItem="2my-eL-S65" secondAttribute="height" id="N2K-qB-tho"/>
+                    <constraint firstItem="dg7-N0-Ho8" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.371875" id="QF3-ux-8WS"/>
+                    <constraint firstItem="bos-sP-y9y" firstAttribute="top" secondItem="6Nk-v3-kvw" secondAttribute="bottom" constant="10" id="TgY-kZ-qOG"/>
+                    <constraint firstItem="2my-eL-S65" firstAttribute="top" secondItem="bos-sP-y9y" secondAttribute="bottom" constant="8" id="Yst-In-NBE"/>
+                    <constraint firstItem="2my-eL-S65" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.3" id="ZTw-oe-v4k"/>
+                    <constraint firstItem="6Nk-v3-kvw" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.130435" id="bqF-GS-GhQ"/>
+                    <constraint firstItem="2my-eL-S65" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.725" id="gkc-ZV-W99"/>
+                    <constraint firstItem="dg7-N0-Ho8" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.108696" id="igj-mz-syQ"/>
+                    <constraint firstItem="2my-eL-S65" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="j02-Tn-2oM"/>
+                    <constraint firstItem="6Nk-v3-kvw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lyw-ax-ykk"/>
+                    <constraint firstItem="dg7-N0-Ho8" firstAttribute="top" secondItem="2my-eL-S65" secondAttribute="bottom" constant="2" id="mX3-zj-ENu"/>
+                    <constraint firstItem="bw1-gI-a5B" firstAttribute="centerY" secondItem="2my-eL-S65" secondAttribute="centerY" id="onb-Wn-mS7"/>
+                    <constraint firstItem="bw1-gI-a5B" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="pcq-S2-vBt"/>
+                    <constraint firstItem="bw1-gI-a5B" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.15" id="qzd-7G-PYP"/>
+                    <constraint firstItem="bos-sP-y9y" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.271875" id="riS-6l-J9D"/>
+                    <constraint firstItem="6Nk-v3-kvw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xSb-UT-OZd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="pointLabel" destination="dg7-N0-Ho8" id="3Zx-eu-8m4"/>
+                <outlet property="textField" destination="2my-eL-S65" id="FIn-K6-8DZ"/>
+                <outlet property="usingBtn" destination="bw1-gI-a5B" id="GXO-kT-Hin"/>
+            </connections>
+            <point key="canvasLocation" x="24.637681159420293" y="142.96875"/>
+        </tableViewCell>
+    </objects>
+</document>

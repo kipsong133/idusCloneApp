@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCustomCell02" id="5IN-pi-qUZ" customClass="CategoryCustomCell02" customModule="EduTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="103.5" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="103.5" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQj-H3-QUl">
+                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     클래스" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Blp-Ew-ZKz">
+                                <rect key="frame" x="0.0" y="0.0" width="103.5" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Blp-Ew-ZKz" firstAttribute="leading" secondItem="eQj-H3-QUl" secondAttribute="leading" id="cbA-Gr-N0d"/>
+                            <constraint firstAttribute="trailing" secondItem="Blp-Ew-ZKz" secondAttribute="trailing" id="gQT-hc-aX7"/>
+                            <constraint firstItem="Blp-Ew-ZKz" firstAttribute="top" secondItem="eQj-H3-QUl" secondAttribute="top" id="hKn-c5-FG0"/>
+                            <constraint firstAttribute="bottom" secondItem="Blp-Ew-ZKz" secondAttribute="bottom" id="zHg-uk-NKA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="AKh-BI-OGy"/>
+            <constraints>
+                <constraint firstItem="eQj-H3-QUl" firstAttribute="leading" secondItem="5IN-pi-qUZ" secondAttribute="leading" id="6dO-Po-buL"/>
+                <constraint firstAttribute="trailing" secondItem="eQj-H3-QUl" secondAttribute="trailing" id="9xH-ZN-6m4"/>
+                <constraint firstAttribute="bottom" secondItem="eQj-H3-QUl" secondAttribute="bottom" id="dij-4P-ZZf"/>
+                <constraint firstItem="eQj-H3-QUl" firstAttribute="top" secondItem="5IN-pi-qUZ" secondAttribute="top" id="fcr-pQ-ZaP"/>
+            </constraints>
+            <size key="customSize" width="132" height="50"/>
+            <connections>
+                <outlet property="mainView" destination="eQj-H3-QUl" id="HsX-gK-pNu"/>
+                <outlet property="pagename" destination="Blp-Ew-ZKz" id="FzM-7D-sNV"/>
+            </connections>
+            <point key="canvasLocation" x="170" y="86"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

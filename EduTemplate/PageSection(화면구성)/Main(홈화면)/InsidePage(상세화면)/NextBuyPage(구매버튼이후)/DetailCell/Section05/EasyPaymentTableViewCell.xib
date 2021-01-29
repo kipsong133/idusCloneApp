@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EasyPaymentTableViewCell" id="KGk-i7-Jjw" customClass="EasyPaymentTableViewCell" customModule="EduTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRk-hT-VbP">
+                        <rect key="frame" x="16" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="eRk-hT-VbP" secondAttribute="height" multiplier="1:1" id="kt7-wv-5U3"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="원형버튼"/>
+                        <state key="selected" backgroundImage="selected원형"/>
+                        <connections>
+                            <action selector="btn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="T9C-6S-bPV"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="간편하게카드결제" translatesAutoresizingMaskIntoConstraints="NO" id="bTu-yv-hDq">
+                        <rect key="frame" x="44" y="14" width="104" height="16"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eRk-hT-VbP" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.0625" id="3v4-7c-XSz"/>
+                    <constraint firstItem="bTu-yv-hDq" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.325" id="cmk-rj-5KU"/>
+                    <constraint firstItem="bTu-yv-hDq" firstAttribute="leading" secondItem="eRk-hT-VbP" secondAttribute="trailing" constant="8" id="fXr-O1-5lG"/>
+                    <constraint firstItem="eRk-hT-VbP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fvr-j3-TzL"/>
+                    <constraint firstItem="bTu-yv-hDq" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.363636" id="g4I-AF-Jv1"/>
+                    <constraint firstItem="eRk-hT-VbP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vke-Fl-8eG"/>
+                    <constraint firstItem="bTu-yv-hDq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="w9O-zP-YHG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnOutlet" destination="eRk-hT-VbP" id="9kE-pH-EG4"/>
+            </connections>
+            <point key="canvasLocation" x="24.637681159420293" y="111.83035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selected원형" width="54" height="54"/>
+        <image name="간편하게카드결제" width="428" height="67"/>
+        <image name="원형버튼" width="54" height="54"/>
+    </resources>
+</document>
